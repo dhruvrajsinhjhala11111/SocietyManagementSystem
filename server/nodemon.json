@@ -1,0 +1,19 @@
+{
+  "watch": [
+    "server.js",
+    "routes/",
+    "controllers/",
+    "models/",
+    "middleware/",
+    "config/",
+    "socket/",
+    "utils/"
+  ],
+  "ignore": [
+    "node_modules/",
+    "uploads/",
+    "*.log"
+  ],
+  "ext": "js,json",
+  "delay": 500
+}

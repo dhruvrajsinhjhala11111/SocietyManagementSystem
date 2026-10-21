@@ -1,0 +1,24 @@
+{
+  "name": "society-management-system",
+  "version": "1.0.0",
+  "description": "Society Management System - Full Stack MVP",
+  "scripts": {
+    "server": "cd server && node server.js",
+    "server:dev": "cd server && npx nodemon server.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\"",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "^5.25.1",
+    "@azure/msal-react": "^5.7.2",
+    "@react-oauth/google": "^0.13.5",
+    "@supabase/auth-js": "^2.118.0",
+    "@types/passport-github2": "^1.2.9",
+    "concurrently": "^8.2.2",
+    "passport-apple": "^2.0.2",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-microsoft": "^2.1.0"
+  }
+}
